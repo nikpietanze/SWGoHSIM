@@ -1,0 +1,218 @@
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 4% 10%
+}
+
+.title {
+  text-align: center;
+  padding: 4% 2%
+}
+
+.title .swfont {
+  font-family: star_jediregular
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0
+}
+
+.title h2 {
+  margin: 10px 0;
+  font-size: .8rem;
+  font-weight: 100;
+  color: #ccc;
+  font-style: italic
+}
+
+.message {
+  width: 95%;
+  margin: 0 0 6%
+}
+
+.message a {
+  display: block;
+  background-color: #ff0;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5% 0;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+  transition: .5s ease all
+}
+
+.message a:hover {
+  background-color: #ffff00bb;
+  transition: .5s ease all
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.block {
+  min-width: 100%;
+  margin: 2% 0;
+  display: flex;
+  padding: 4%;
+  background-color: #292929;
+  color: #ff0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  border-radius: 20px;
+  border: 2px solid #111;
+  align-items: center;
+  transition: .5s ease all
+}
+
+.block:hover {
+  background-color: #1f1f1f;
+  transition: .5s ease all
+}
+
+.block.blockimg:hover {
+  background-color: #292929
+}
+
+.block i {
+  font-size: 2.75rem;
+  flex-basis: 22%;
+  text-align: left
+}
+
+.blockimg i {
+  flex-basis: 50%;
+  font-size: 2.5rem
+}
+
+.blockimg i:first-child {
+  color: #2378df;
+  padding-right: 2%;
+  text-align: right
+}
+
+.blockimg i:last-child {
+  color: red;
+  padding-left: 2%;
+  text-align: left
+}
+
+.block .text {
+  flex-basis: 78%;
+  text-align: left
+}
+
+.block .text h4 {
+  margin: 0 0 2% 0;
+  font-size: 1.05rem;
+  text-decoration: underline
+}
+
+.block p {
+  font-size: .8rem;
+  margin: 0;
+  text-transform: none;
+  color: #fff
+}
+
+
+
+@media only screen and (min-width:719px) {
+  .message {
+    width: 75%
+  }
+
+  .blocks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
+  .block {
+    flex-basis: 48%;
+    min-width: 0
+  }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+  .message {
+    width: 40%;
+    margin: 1% 0 2%
+  }
+
+  .contents {
+    padding: 4%
+  }
+
+  .title h1 {
+    font-size: 2.25rem
+  }
+
+  .title h2 {
+    font-size: 1rem
+  }
+
+  .blocks {
+    align-items: stretch
+  }
+
+  .block {
+    flex-basis: 49%;
+    margin: 1% 0
+  }
+
+  .block i {
+    font-size: 3.5rem
+  }
+
+  .block .text h4 {
+    font-size: 1.6rem
+  }
+
+  .block .text p {
+    font-size: 1rem
+  }
+}
+
+@media only screen and (min-width:1500px) {
+  .title {
+    padding: 2%
+  }
+
+  .title h1 {
+    font-size: 2.5rem
+  }
+
+  .title h2 {
+    font-size: 1.25rem
+  }
+
+  .contents {
+    padding: 2% 2% 4%
+  }
+
+  .message {
+    margin: 1% 0 3%
+  }
+
+  .blocks {
+    justify-content: space-evenly
+  }
+
+  .block {
+    flex-basis: 30%;
+    padding: 2%
+  }
+}

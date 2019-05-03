@@ -1,0 +1,11 @@
+.arenaLBContents {
+  display: flex;
+  padding: 5% 0;
+  justify-content: center;
+  align-content: center
+}
+
+.arenaLBContents h1 {
+  font-size: 3rem;
+  color: #ff0;
+}

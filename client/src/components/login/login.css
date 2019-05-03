@@ -1,0 +1,11 @@
+.loginContents {
+  display: flex;
+  padding: 5% 0;
+  justify-content: center;
+  align-content: center
+}
+
+.loginContents h1 {
+  font-size: 3rem;
+  color: #ff0;
+}
