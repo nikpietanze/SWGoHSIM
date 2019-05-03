@@ -1,0 +1,2 @@
+# swgohsim
+swgohsim.com
