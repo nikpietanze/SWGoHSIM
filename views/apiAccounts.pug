@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  section.apiAccountsContents
+    h1 #{title}
+    ul.accounts
+      each account, i in accounts
+        li= 'Account: ' + account.username + ' / Password: ' + account.password + ' / PlayerID: ' + account.playerID

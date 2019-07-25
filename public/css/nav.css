@@ -1,0 +1,117 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6vh;
+  background-color: #000;
+  padding: 0 5%
+}
+
+nav a {
+  color: #3289f2;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .5s ease all
+}
+
+nav a:hover {
+  color: #60a8ff;
+  transition: .5s ease all
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%
+}
+
+.navleft a {
+  text-decoration: none
+}
+
+.navleft #logo {
+  font-family: star_jediregular;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff
+}
+
+.navleft #logo:hover {
+  color: #60a8ff;
+  transition: .5s ease all
+}
+
+#login,
+#sim {
+  display: none
+}
+
+#displayName {
+  text-transform: none;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-self: flex-end
+}
+
+.navright a {
+  text-align: right
+}
+
+@media only screen and (min-width:719px) {
+  .navleft {
+    flex-basis: 40%
+  }
+
+  #login,
+  #sim {
+    display: block
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .navleft {
+    flex-basis: 30%
+  }
+
+  .navright {
+    flex-basis: 25%
+  }
+
+  .navright a {
+    flex-basis: 50%
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .navleft {
+    flex-basis: 25%
+  }
+
+  .navright {
+    flex-basis: 20%
+  }
+
+  .navleft a, .navright a {
+    font-size: 1.05rem
+  }
+}
+
+@media only screen and (min-width:1500px) {
+  .navleft {
+    flex-basis: 20%
+  }
+
+  .navright {
+    flex-basis: 15%
+  }
+
+  .navleft #logo {
+    font-size: 1.75rem
+  }
+}

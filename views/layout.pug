@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel="icon" type="image/x-icon" href="/images/favicon.ico")
+    link(rel='stylesheet' href='/css/messages.min.css')
+    link(rel='stylesheet' href='/css/nav.min.css')
+    link(rel='stylesheet' href='/css/apiAccounts.min.css')
+    link(rel='stylesheet' href='/css/arenaLB.min.css')
+    link(rel='stylesheet' href='/css/blog.min.css')
+    link(rel='stylesheet' href='/css/createProfile.min.css')
+    link(rel='stylesheet' href='/css/footer.min.css')
+    link(rel='stylesheet' href='/css/login.min.css')
+    link(rel='stylesheet' href='/css/planner.min.css')
+    link(rel='stylesheet' href='/css/profile.min.css')
+    link(rel='stylesheet' href='/css/raidLB.min.css')
+    link(rel='stylesheet' href='/css/sim.min.css')
+    link(rel='stylesheet' href='/css/style.min.css')
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet")
+  body
+    header
+      nav
+        div.navleft
+          a(href="/")#logo swgohsim
+          a(href="/sim")#sim ModSim
+          a(href="/blog")#blog Blog
+        div.navright
+          if user
+            a(href="/profile")#displayName #{user.displayName}
+            a(href="/profile/logout") Logout
+          else
+            a(href="/profile/login")#login Login
+    //- Change this container to ignore bootstrap
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg}
+      block content
+    footer.footer
+      div.left
+        h3 Tools
+        a(href="/") FAQ
+        a(href="/blog") Blog
+        a(href="/") Patreon
+        a(href="/") Report a bug
+        a(href="/") Privacy Policy
+      div.right
+        h3 Contact
+        p Twitter: <a href="/">@swgohsim</a>
+        p Discord: <a href="/">SWGoHSIM</a>
+        p Email: <a href="/">support@swgohsim.com</a>
+        p Created by Nik

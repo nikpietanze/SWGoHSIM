@@ -1,0 +1,14 @@
+//- Allows us to insert content into the layout.pug file
+extends layout
+
+//- Content insertion point into the layout.pug file
+block content
+  div.loginContents
+    h1.swfont swgohsim
+    form(method="POST" action="/profile/login")
+      h2 Username:
+      input(name="username" type="text")
+      h2 Password:
+      input(name="password" type="password")
+      p No Account? <a href="/profile/create"> &nbsp; Create one.</a>
+      button(type="submit" value="submit") Login

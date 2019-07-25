@@ -1,0 +1,40 @@
+//- Allows us to insert content into the layout.pug file
+extends layout
+
+//- Content insertion point into the layout.pug file
+block content
+  div.title
+    h1.swfont swgohsim
+    h2 Sim mods for your characters, track progress with our mod planner, view leaderboards and more.
+  div.contents
+    //- div.message
+    //-   a(href="/") This is a message to users
+    div.blocks
+      a(href="/sim").block.sim
+        i.fas.fa-brain
+        div.text
+          h4 Sim Mods
+          p Simulate mods to discover which are most effective.
+      a(href="/planner").block.planner
+        i.fas.fa-map
+        div.text
+          h4 Mod Planner
+          p Track your progress on obtaining the mods you need.
+      a(href="/leaderboard/arena").block.arena
+        i.fas.fa-crown
+        div.text
+          h4 Arena Leaderboard
+          p Check out top players in the Arena Leaderboard.
+      a(href="/leaderboard/raid").block.raid
+        i.fab.fa-fort-awesome
+        div.text
+          h4 Raid Leaderboard
+          p Check out top players in the Raid Leaderboard.
+      a(href="/profile").block.profile
+        i.fas.fa-hammer
+        div.text
+          h4 My Profile
+          p Create or View My Profile.
+      div.block.blockimg
+          i.fas.fa-jedi
+          i.fab.fa-sith

@@ -1,24 +1,27 @@
 {
   "name": "swgohsim",
   "version": "1.0.0",
-  "description": "SWGoHSIM is a web based platform for players to SIM mods and build on their roster as well as access game data.",
-  "main": "index.js",
+  "description": "Simulation Website for SWGoH",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node app"
   },
-  "keywords": [],
   "author": "Nik Pietanze",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^4.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-signature": "^1.1.0",
     "express": "^4.16.4",
-    "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.0"
+    "express-bearer-token": "^2.4.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^3.2.0",
+    "mongoose": "^5.5.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.3",
+    "request": "^2.88.0"
   }
 }
