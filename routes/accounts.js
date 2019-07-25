@@ -91,11 +91,11 @@ let options = { method: 'POST',
      'User-Agent': 'PostmanRuntime/7.13.0',
      'Content-Type': 'application/x-www-form-urlencoded' },
   form: 
-   { username: 'KinPie',
-     password: 'swgohsim098',
-     grant_type: 'password',
-     client_id: 'swgohsim',
-     client_secret: 'nico' }
+   { username: '',
+     password: '',
+     grant_type: '',
+     client_id: '',
+     client_secret: '' }
 };
 
 // Initializes the bearer token variable
@@ -122,11 +122,11 @@ let playerData = () => {
       'Authorization': 'Bearer ' + token
     },
     form: { 
-      username: 'KinPie',
-      password: 'swgohsim098',
-      grant_type: 'password',
-      client_id: 'swgohsim',
-      client_secret: 'nico'
+      username: '',
+      password: '',
+      grant_type: '',
+      client_id: '',
+      client_secret: ''
     }
   };
 
@@ -150,11 +150,11 @@ let playerGuildData = () => {
       'Authorization': 'Bearer ' + token
     },
     form: {
-      username: 'KinPie',
-      password: 'swgohsim098',
-      grant_type: 'password',
-      client_id: 'swgohsim',
-      client_secret: 'nico'
+      username: '',
+      password: '',
+      grant_type: '',
+      client_id: '',
+      client_secret: ''
     }
   };
 
