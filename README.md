@@ -1,2 +1,3 @@
 # swgohsim
-swgohsim.com
+
+Express server with login system paired to a MongoDB database.
